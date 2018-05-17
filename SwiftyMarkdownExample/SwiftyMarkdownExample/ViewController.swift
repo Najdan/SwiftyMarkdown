@@ -25,7 +25,8 @@ class ViewController: UIViewController {
 		self.textView.dataDetectorTypes = UIDataDetectorTypes.all
 		
 		if self.textView.text != "" {
-			self.textView.attributedText = SwiftyMarkdown(string: "Yo I'm a *single* line **string**. How do I look?").attributedString()
+			self.textView.attributedText = SwiftyMarkdown(string: "Yo I'm a *single* line **string**. How do I look? Also I can have icon embeded from project ![project icon](homeIcon) or from internet ![internet icon](https://avatars0.githubusercontent.com/u/4264802?s=52&v=4)"
+			).attributedString()
 			return
 		}
 
